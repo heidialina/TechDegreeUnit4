@@ -1,0 +1,74 @@
+/* Buttons:
+    .btn--default
+    .btn--success
+    .btn--error
+    .btn--warning
+    .btn--info
+    .theme__colors */
+
+.btn--default[type="submit"]{
+	@include button; 
+	background-color: $btn-default;
+	width: 100%;
+	&:hover {
+		background-color: darken($btn-default, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}
+
+.btn--default  {
+	@include button; 
+	background-color: $btn-default;
+	&:hover {
+		background-color: darken($btn-default, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}
+
+.btn--success {
+	@include button; 
+	background-color: $btn-success;
+	&:hover {
+		background-color: darken($btn-success, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}
+
+.btn--error {
+	@include button; 
+	background-color: $btn-error;
+	&:hover {
+		background-color: darken($btn-error, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}
+
+.btn--warning {
+	@include button; 
+	background-color: $btn-warning;
+	&:hover {
+		background-color: darken($btn-warning, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}
+
+.btn--info {
+	@include button; 
+	background-color: $btn-info;
+	&:hover {
+		background-color: darken($btn-info, 10%);
+	}
+	@include center {
+		@include common-margin; 
+	}
+}

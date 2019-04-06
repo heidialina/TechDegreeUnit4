@@ -1,0 +1,29 @@
+/* Image:
+    .img--logo
+    .img--frame
+    .img--avatar */
+
+.img--logo {
+	padding-top: 15px; 
+}
+
+.img--avatar {
+	@include center {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}
+
+.img--frame {
+	padding: 15px;
+	border: 1px solid $red-lilac;
+	margin-left: $common-margin;
+}
+
+.img--avatar:nth-child(1),
+.img--frame {
+	@include center {
+		margin-top: $common-margin;
+		margin-bottom: $common-margin; 
+	}
+}

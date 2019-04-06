@@ -1,0 +1,49 @@
+
+/*Create a partial for variables in your utilities folder
+
+Use this partial to create variables for your repeated values.
+At minimum, create variables for fonts, breakpoints, and colors.
+Import this partial into your utilities/index.scss file */
+
+/*---------------------- ALKAA ------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+// fonts
+
+$font-s: 0.9em;
+$font-m: 1.2em;
+$font-l: 1.5em;
+
+// colors
+
+// breakpoint
+
+$break-l: 768px;
+$break-s: 767px;
+
+// colors
+
+$sky-blue: #a3e3f7;
+$soft-blue: #b2d4ff;
+$soft-lilac: #beb7e3;
+$lilac: #b87db4;
+$red-lilac: #944c4b;
+
+
+// Buttons
+
+$btn-default: #dced31;
+$btn-success: #0cce6b;
+$btn-error: #ef2d56;
+$btn-warning: #ed7d3a;
+$btn-info: #adcee0;
+
+// borders
+
+$border-radius: 10px; 
+
+// margins and paddings
+
+$common-margin: 30px;

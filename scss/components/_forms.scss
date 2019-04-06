@@ -1,0 +1,17 @@
+/* Forms:
+    .form
+    .form__label--hidden
+    .form__input */
+.form {
+	& .form__input {
+		padding: 10px 0 10px 10px; 
+		border: none;
+		border-bottom: 4px solid $soft-blue;
+		width: 100%;
+		@include center;
+	}
+
+	& .form__label--hidden {
+		display: none;
+	}
+}

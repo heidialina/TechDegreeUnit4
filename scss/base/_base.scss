@@ -1,0 +1,28 @@
+/* In your base folder, include a normalize.css file and create a base.scss file. In the base.scss file, you can only apply styles to four different elements directly:
+
+the universal selector (*)
+ul elements
+p elements
+a elements */
+
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+	box-sizing: border-box;
+	margin: auto;
+	font-family: 'Lora', serif;
+	max-width: 900px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	text-align: justify;
+}

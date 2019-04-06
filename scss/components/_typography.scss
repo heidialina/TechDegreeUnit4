@@ -1,0 +1,40 @@
+/* Typography:
+    .container
+    .link
+    .blockquote
+    .headline--primary
+    .headline--secondary */
+
+.container {
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.headline--primary {
+	color: $lilac;
+	font-weight: bold;
+	font-size: $font-l;
+	margin-left: $common-margin;
+}
+
+.headline--secondary {
+	color: $soft-lilac;
+	font-size: $font-s;
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+.blockquote {
+	margin: 20px 20px 50px 25px;
+	padding: 15px; 
+	border-left: 4px solid $soft-blue;
+	font-size: $font-m;
+	font-style: italic;
+	margin-bottom: $common-margin;
+}
+
+.link {
+	color: $red-lilac;
+	font-weight: bold;
+}

@@ -1,0 +1,58 @@
+/* Create a partial for your mixins in your utilities folder
+
+Inside your mixins partial, you’ll want to create mixins for:
+
+Media Queries
+Flexbox settings */
+
+// ---------------------- start ------------------------------------
+
+@mixin common-margin {
+	margin-top: 15px;
+	margin-bottom: 20px; 
+}
+
+@mixin break-l {
+	@media (min-width: $break-l) {
+		@content;
+	}
+}
+
+@mixin break-s {
+	@media (max-width: $break-s) {
+		@content;
+	}
+}
+
+@mixin flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin center {
+	display: block; 
+	margin: auto;
+	@content;
+}
+
+@mixin button {
+	padding: 15px 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: $border-radius;
+	font-weight: bold;
+	text-transform: uppercase;
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}
+
+@mixin box {
+	padding: 15px 30px;
+	border: none;
+	border-radius: $border-radius;
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+	
+}

@@ -1,0 +1,24 @@
+/* Navigation:
+    .nav
+    .nav__item */
+
+.nav {
+	min-height: 30px;
+	padding: 30px;
+	text-align: center;
+	list-style-type: none;
+	@include break-l {
+		@include flex-row;  // flex mixin used here
+	}
+}
+
+.nav__item a {
+	padding: 20px;
+	font-weight: bold;
+	display: block;
+	&:hover {
+		color: whitesmoke;
+		background: $soft-blue;
+		border-radius: $border-radius;
+	}	
+}
