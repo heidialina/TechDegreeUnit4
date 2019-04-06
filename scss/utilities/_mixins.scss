@@ -5,21 +5,6 @@ Inside your mixins partial, you’ll want to create mixins for:
 Media Queries
 Flexbox settings
 
-
-
-@mixin break-l {
-	@media (min-width: $break-l) {
-		@content;
-	}
-}
-
-@mixin break-s {
-	@media (max-width: $break-s) {
-		@content;
-	}
-}
-
-
 */
 
 // Media Queries 
@@ -51,18 +36,6 @@ Flexbox settings
 	display: block; 
 	margin: auto;
 	@content;
-}
-
-@mixin button {
-	padding: 15px 30px;
-	border: none;
-	cursor: pointer;
-	border-radius: $border-radius;
-	font-weight: bold;
-	text-transform: uppercase;
-	@media (max-width: 767px) {
-		width: 100%;
-	}
 }
 
 @mixin box {

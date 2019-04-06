@@ -1,0 +1,11 @@
+%button {
+	padding: 15px 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: $border-radius;
+	font-weight: bold;
+	text-transform: uppercase;
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}

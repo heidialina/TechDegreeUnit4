@@ -7,7 +7,7 @@
     .theme__colors */
 
 .btn--default[type="submit"]{
-	@include button; 
+	@extend %button; 
 	background-color: $btn-default;
 	width: 100%;
 	&:hover {
@@ -19,7 +19,7 @@
 }
 
 .btn--default  {
-	@include button; 
+	@extend %button; 
 	background-color: $btn-default;
 	&:hover {
 		background-color: darken($btn-default, 10%);
@@ -30,7 +30,7 @@
 }
 
 .btn--success {
-	@include button; 
+	@extend %button; 
 	background-color: $btn-success;
 	&:hover {
 		background-color: darken($btn-success, 10%);
@@ -41,7 +41,7 @@
 }
 
 .btn--error {
-	@include button; 
+	@extend %button; 
 	background-color: $btn-error;
 	&:hover {
 		background-color: darken($btn-error, 10%);
@@ -52,7 +52,7 @@
 }
 
 .btn--warning {
-	@include button; 
+	@extend %button; 
 	background-color: $btn-warning;
 	&:hover {
 		background-color: darken($btn-warning, 10%);
@@ -63,7 +63,7 @@
 }
 
 .btn--info {
-	@include button; 
+	@extend %button; 
 	background-color: $btn-info;
 	&:hover {
 		background-color: darken($btn-info, 10%);

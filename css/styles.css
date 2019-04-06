@@ -6,27 +6,26 @@ At minimum, create variables for fonts, breakpoints, and colors.
 Import this partial into your utilities/index.scss file */
 /*---------------------- ALKAA ------------------------------------ */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+/* line 1, ../scss/utilities/_placeholders.scss */
+.btn--default[type="submit"], .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    /* line 1, ../scss/utilities/_placeholders.scss */
+    .btn--default[type="submit"], .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+      width: 100%; } }
+
 /* Create a partial for your mixins in your utilities folder
 
 Inside your mixins partial, you’ll want to create mixins for:
 
 Media Queries
 Flexbox settings
-
-
-
-@mixin break-l {
-	@media (min-width: $break-l) {
-		@content;
-	}
-}
-
-@mixin break-s {
-	@media (max-width: $break-s) {
-		@content;
-	}
-}
-
 
 */
 /* CSS Document */
@@ -38,7 +37,6 @@ Flexbox settings
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lora");
 /* line 15, ../scss/base/_normalize.scss */
 html {
   line-height: 1.15;
@@ -625,127 +623,67 @@ p {
     .theme__colors */
 /* line 9, ../scss/components/_buttons.scss */
 .btn--default[type="submit"] {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #dced31;
   width: 100%;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 9, ../scss/components/_buttons.scss */
-    .btn--default[type="submit"] {
-      width: 100%; } }
   /* line 13, ../scss/components/_buttons.scss */
   .btn--default[type="submit"]:hover {
     background-color: #c6d813; }
 
 /* line 21, ../scss/components/_buttons.scss */
 .btn--default {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #dced31;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 21, ../scss/components/_buttons.scss */
-    .btn--default {
-      width: 100%; } }
   /* line 24, ../scss/components/_buttons.scss */
   .btn--default:hover {
     background-color: #c6d813; }
 
 /* line 32, ../scss/components/_buttons.scss */
 .btn--success {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #0cce6b;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 32, ../scss/components/_buttons.scss */
-    .btn--success {
-      width: 100%; } }
   /* line 35, ../scss/components/_buttons.scss */
   .btn--success:hover {
     background-color: #099e52; }
 
 /* line 43, ../scss/components/_buttons.scss */
 .btn--error {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #ef2d56;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 43, ../scss/components/_buttons.scss */
-    .btn--error {
-      width: 100%; } }
   /* line 46, ../scss/components/_buttons.scss */
   .btn--error:hover {
     background-color: #d9103b; }
 
 /* line 54, ../scss/components/_buttons.scss */
 .btn--warning {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #ed7d3a;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 54, ../scss/components/_buttons.scss */
-    .btn--warning {
-      width: 100%; } }
   /* line 57, ../scss/components/_buttons.scss */
   .btn--warning:hover {
     background-color: #e06014; }
 
 /* line 65, ../scss/components/_buttons.scss */
 .btn--info {
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
   background-color: #adcee0;
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    /* line 65, ../scss/components/_buttons.scss */
-    .btn--info {
-      width: 100%; } }
   /* line 68, ../scss/components/_buttons.scss */
   .btn--info:hover {
     background-color: #88b8d2; }
