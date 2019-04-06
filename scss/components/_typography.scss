@@ -28,7 +28,8 @@
 .blockquote {
 	margin: 20px 20px 50px 25px;
 	padding: 15px; 
-	border-left: 4px solid $soft-blue;
+	border-left: 8px solid $soft-blue;
+	border-radius: 5px;
 	font-size: $font-m;
 	font-style: italic;
 	margin-bottom: $common-margin;

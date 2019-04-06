@@ -16,12 +16,11 @@ $font-s: 0.9em;
 $font-m: 1.2em;
 $font-l: 1.5em;
 
-// colors
 
 // breakpoint
 
-$break-l: 768px;
-$break-s: 767px;
+$break-l: "(min-width: 768px)";
+$break-s: "(max-width: 767px)";
 
 // colors
 

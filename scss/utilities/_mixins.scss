@@ -3,14 +3,9 @@
 Inside your mixins partial, you’ll want to create mixins for:
 
 Media Queries
-Flexbox settings */
+Flexbox settings
 
-// ---------------------- start ------------------------------------
 
-@mixin common-margin {
-	margin-top: 15px;
-	margin-bottom: 20px; 
-}
 
 @mixin break-l {
 	@media (min-width: $break-l) {
@@ -22,6 +17,29 @@ Flexbox settings */
 	@media (max-width: $break-s) {
 		@content;
 	}
+}
+
+
+*/
+
+// Media Queries 
+
+@mixin media ($mediaq) {
+	@if $mediaq == break-l {
+		@media #{$break-l} { 
+			@content;
+	  }
+	}
+	@else if $mediaq == break-s {
+		@media #{$break-s} {
+			@content;
+		}
+	}
+}
+
+@mixin common-margin {
+	margin-top: 15px;
+	margin-bottom: 20px; 
 }
 
 @mixin flex-row {

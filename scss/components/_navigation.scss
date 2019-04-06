@@ -7,7 +7,8 @@
 	padding: 30px;
 	text-align: center;
 	list-style-type: none;
-	@include break-l {
+	@include media (break-l) {
+		width: 70%;
 		@include flex-row;  // flex mixin used here
 	}
 }
@@ -16,6 +17,8 @@
 	padding: 20px;
 	font-weight: bold;
 	display: block;
+	color: inherit;
+	text-transform: uppercase;
 	&:hover {
 		color: whitesmoke;
 		background: $soft-blue;

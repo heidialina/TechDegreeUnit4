@@ -34,7 +34,7 @@
 
 .grid__col--12 {
 	width: 100%;
-	@include break-l {
+	@include media(break-l) {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -52,7 +52,7 @@
 .grid__col--8.theme__colors,
 .grid__col--7.theme__colors {
 	@include box;
-	@include break-l {
+	@include media(break-l) {
 		text-align: center;
 		margin-top: 10px;
 		margin-left: 10px;
@@ -98,7 +98,7 @@
 		padding: 1em 10px;
 		display: flex;
 		flex-direction: column;
-		@include break-l { // NOTE: replace with media query mixin if aiming for exceeds
+		@include media (break-l){ // NOTE: replace with media query mixin if aiming for exceeds
 			flex-direction: row;
 		}
 	}
@@ -108,7 +108,7 @@
 		&--#{$i} {
 		margin-top: 10px;
 		flex-basis: 100%;
-		@include break-l { // NOTE: replace with media query mixin if aiming for exceeds
+		@include media (break-l) { // NOTE: replace with media query mixin if aiming for exceeds
 			margin-top: 0;
 			flex-basis: #{$i / 12 * 100 + "%"} ;
         }
@@ -123,7 +123,7 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include media (break-l) {
 
       // add grid gutter
       margin-left: 10px;
